@@ -1,27 +1,32 @@
-# src/evaluator.py
 import json
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.preprocessing import MultiLabelBinarizer
 
-def evaluate_llm_output(prediction, reference):
-    """
-    Simple evaluation: returns 1 if prediction matches reference exactly, else 0.
-    """
-    return int(prediction.strip() == reference.strip())
-
-def evaluate_file(pred_file, ref_file):
-    """
-    Evaluate predictions against reference JSON file.
-    Returns a score and detailed report.
-    """
-    with open(pred_file, "r") as f:
+def evaluate_file(predicted_path, reference_path):
+    # Load JSON files
+    with open(predicted_path, 'r') as f:
         preds = json.load(f)
-    with open(ref_file, "r") as f:
+    with open(reference_path, 'r') as f:
         refs = json.load(f)
 
-    scores = []
-    for p, r in zip(preds, refs):
-        score = evaluate_llm_output(p["text"], r["text"])
-        scores.append(score)
+    # Extract label lists
+    y_true = [item['labels'] for item in refs]
+    y_pred = [item['labels'] for item in preds]
 
-    accuracy = sum(scores) / len(scores)
-    report = {"accuracy": accuracy, "total": len(scores), "correct": sum(scores)}
-    return report
+    # Binarize labels for multi-label metrics
+    mlb = MultiLabelBinarizer()
+    y_true_bin = mlb.fit_transform(y_true)
+    y_pred_bin = mlb.transform(y_pred)
+
+    # Compute metrics
+    acc = accuracy_score(y_true_bin, y_pred_bin)  # exact match
+    prec = precision_score(y_true_bin, y_pred_bin, average='micro', zero_division=0)
+    rec = recall_score(y_true_bin, y_pred_bin, average='micro', zero_division=0)
+    f1 = f1_score(y_true_bin, y_pred_bin, average='micro', zero_division=0)
+
+    return {
+        "accuracy": acc,
+        "precision": prec,
+        "recall": rec,
+        "f1": f1
+    }

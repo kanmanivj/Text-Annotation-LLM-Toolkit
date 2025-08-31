@@ -1,0 +1,3 @@
+- **Amazon is hiring AI experts.** → Labels: general, technical
+- **Python is fun to learn!** → Labels: general, technical
+- **Cloud computing is essential for modern apps.** → Labels: general, technical

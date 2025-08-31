@@ -1,8 +1,8 @@
-
 from src.evaluator import evaluate_file
-# Run evaluation
-results = evaluate_file(pred_file="data/pred.json", ref_file="data/ref.json")
 
-# Access accuracy from the returned dictionary
-accuracy = results["accuracy"]
-print(f"Overall accuracy: {accuracy*100:.2f}%")
+# Evaluate predicted vs reference
+evaluation = evaluate_file("data/output.json", "data/ref.json")
+print(f"Accuracy: {evaluation['accuracy']*100:.2f}%")
+print(f"Precision: {evaluation['precision']*100:.2f}%")
+print(f"Recall: {evaluation['recall']*100:.2f}%")
+print(f"F1-score: {evaluation['f1']*100:.2f}%")

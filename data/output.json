@@ -1,14 +1,23 @@
 [
   {
-    "text": "openai develops advanced ai models.",
-    "label": "general"
+    "text": "Amazon is hiring AI experts.",
+    "labels": [
+      "general",
+      "technical"
+    ]
   },
   {
-    "text": "learning python improves programming skills.",
-    "label": "general"
+    "text": "Python is fun to learn!",
+    "labels": [
+      "general",
+      "technical"
+    ]
   },
   {
-    "text": "amazon is expanding its ai team in the uk.",
-    "label": "general"
+    "text": "Cloud computing is essential for modern apps.",
+    "labels": [
+      "general",
+      "technical"
+    ]
   }
 ]
