@@ -1,0 +1,37 @@
+[
+  {
+    "image": "sample_5.png",
+    "labels": [
+      "cat",
+      "animal"
+    ]
+  },
+  {
+    "image": "sample_4.png",
+    "labels": [
+      "cat",
+      "animal"
+    ]
+  },
+  {
+    "image": "sample_3.png",
+    "labels": [
+      "cat",
+      "animal"
+    ]
+  },
+  {
+    "image": "sample_2.png",
+    "labels": [
+      "cat",
+      "animal"
+    ]
+  },
+  {
+    "image": "sample_1.png",
+    "labels": [
+      "cat",
+      "animal"
+    ]
+  }
+]
