@@ -2,6 +2,21 @@ import json
 import csv
 from pathlib import Path
 
+def classify_image(img_path):
+    try:
+        image = Image.open(img_path).convert("RGB")
+    except Exception as e:
+        print(f"⚠️ Skipping {img_path} (cannot open: {e})")
+        return "unreadable"
+
+    inputs = feature_extractor(images=image, return_tensors="pt", padding=True)
+    outputs = model(**inputs)
+    logits = outputs.logits
+    predicted_class_idx = logits.argmax(-1).item()
+    label = model.config.id2label[predicted_class_idx]
+    return label
+
+
 def read_input(file_path):
     ext = Path(file_path).suffix.lower()
     data = []
@@ -39,16 +54,20 @@ def write_output(data, file_path):
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             for entry in data:
-                writer.writerow({"text": entry["text"], "labels": ";".join(entry["labels"])})
+                writer.writerow({
+                    "text": entry["text"],
+                    "labels": ";".join(entry["labels"])
+                })
     
     elif ext in [".md", ".txt"]:
         with open(file_path, "w", encoding="utf-8") as f:
             for entry in data:
-                labels = ", ".join(entry["labels"])
-                f.write(f"- **{entry['text']}** → Labels: {labels}\n")
-
+                labels_str = ", ".join(entry["labels"])
+                f.write(f"{entry['text']} | Labels: {labels_str}\n")
+    
     else:
         raise ValueError(f"Unsupported output format: {ext}")
+
 
 def annotate_file(input_path, output_path, labels=None):
     """

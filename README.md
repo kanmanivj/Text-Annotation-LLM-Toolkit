@@ -76,6 +76,17 @@ Precision: Proportion of true positive predictions among all positive prediction
 
 Recall: Proportion of true positive predictions among all actual positives.
 
+## Multimodal Support
+The toolkit now supports image annotation alongside text:
+
+Input Directory: Accepts a folder of images (.png, .jpg, .jpeg) in data/images/.
+
+Annotation: Assign multiple labels to each image (multi-label support).
+
+Output: Export annotations in JSON or CSV format (data/image_output.json or data/image_output.csv).
+
+Synthetic Images: You can generate sample images using Python (PIL) for testing purposes.
+
 ## Contributing
 Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request with your proposed changes.
 

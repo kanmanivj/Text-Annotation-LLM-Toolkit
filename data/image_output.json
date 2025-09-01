@@ -1,37 +1,20 @@
 [
   {
-    "image": "sample_5.png",
+    "image": "car1.jpg",
     "labels": [
-      "cat",
-      "animal"
+      "sports car, sport car"
     ]
   },
   {
-    "image": "sample_4.png",
+    "image": "dog1.jpg",
     "labels": [
-      "cat",
-      "animal"
+      "Chihuahua"
     ]
   },
   {
-    "image": "sample_3.png",
+    "image": "cat1.jpg",
     "labels": [
-      "cat",
-      "animal"
-    ]
-  },
-  {
-    "image": "sample_2.png",
-    "labels": [
-      "cat",
-      "animal"
-    ]
-  },
-  {
-    "image": "sample_1.png",
-    "labels": [
-      "cat",
-      "animal"
+      "Mexican hairless"
     ]
   }
 ]
