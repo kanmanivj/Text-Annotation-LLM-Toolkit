@@ -2,20 +2,6 @@ import json
 import csv
 from pathlib import Path
 
-def classify_image(img_path):
-    try:
-        image = Image.open(img_path).convert("RGB")
-    except Exception as e:
-        print(f"⚠️ Skipping {img_path} (cannot open: {e})")
-        return "unreadable"
-
-    inputs = feature_extractor(images=image, return_tensors="pt", padding=True)
-    outputs = model(**inputs)
-    logits = outputs.logits
-    predicted_class_idx = logits.argmax(-1).item()
-    label = model.config.id2label[predicted_class_idx]
-    return label
-
 
 def read_input(file_path):
     ext = Path(file_path).suffix.lower()

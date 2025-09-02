@@ -4,6 +4,7 @@
 
 ## Features 🚀
 
+## Features 🚀
  - Multi-Format Input Support: Annotate text data from JSON, CSV, and Markdown files.
 
  - Multi-Label Annotation: Assign multiple labels to each text entry, accommodating complex categorization needs.
@@ -13,6 +14,13 @@
  - Evaluation Metrics: Assess annotation quality using accuracy, precision, recall, and F1-score.
 
  - Interactive CLI: Use command-line interface for batch processing and automation.
+
+ - GPU Acceleration: Optional GPU support for faster image annotation using Hugging Face models.
+
+ - Async & Batching: Process large image datasets efficiently with asynchronous execution and configurable batch sizes.
+
+ - Benchmarking: Built-in tools to measure annotation performance over different dataset sizes.
+
 
 ## Installation
 
@@ -85,7 +93,11 @@ Annotation: Assign multiple labels to each image (multi-label support).
 
 Output: Export annotations in JSON or CSV format (data/image_output.json or data/image_output.csv).
 
+Batching & Limits: Configure batch size and optionally limit the number of images processed for testing or benchmarking.
+
 Synthetic Images: You can generate sample images using Python (PIL) for testing purposes.
+
+Benchmarking: Use the `tests/test_image_annotator.py` to benchmark annotation speed over different dataset sizes (10, 20, 50 images).
 
 ## Contributing
 Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request with your proposed changes.

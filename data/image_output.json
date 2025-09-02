@@ -1,20 +1,302 @@
 [
   {
-    "image": "car1.jpg",
+    "image": "sample_48.jpg",
+    "labels": [
+      "airliner"
+    ]
+  },
+  {
+    "image": "sample_49.jpg",
+    "labels": [
+      "hand-held computer, hand-held microcomputer"
+    ]
+  },
+  {
+    "image": "sample_11.jpg",
+    "labels": [
+      "tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui"
+    ]
+  },
+  {
+    "image": "sample_39.jpg",
+    "labels": [
+      "moving van"
+    ]
+  },
+  {
+    "image": "sample_38.jpg",
+    "labels": [
+      "moving van"
+    ]
+  },
+  {
+    "image": "sample_10.jpg",
+    "labels": [
+      "toy terrier"
+    ]
+  },
+  {
+    "image": "sample_12.jpg",
+    "labels": [
+      "tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui"
+    ]
+  },
+  {
+    "image": "sample_13.jpg",
+    "labels": [
+      "four-poster"
+    ]
+  },
+  {
+    "image": "sample_17.jpg",
+    "labels": [
+      "Bedlington terrier"
+    ]
+  },
+  {
+    "image": "sample_16.jpg",
+    "labels": [
+      "Pekinese, Pekingese, Peke"
+    ]
+  },
+  {
+    "image": "sample_9.jpg",
     "labels": [
       "sports car, sport car"
     ]
   },
   {
-    "image": "dog1.jpg",
+    "image": "sample_28.jpg",
     "labels": [
-      "Chihuahua"
+      "whiskey jug"
     ]
   },
   {
-    "image": "cat1.jpg",
+    "image": "sample_14.jpg",
+    "labels": [
+      "moving van"
+    ]
+  },
+  {
+    "image": "sample_15.jpg",
+    "labels": [
+      "indri, indris, Indri indri, Indri brevicaudatus"
+    ]
+  },
+  {
+    "image": "sample_29.jpg",
+    "labels": [
+      "airliner"
+    ]
+  },
+  {
+    "image": "sample_8.jpg",
+    "labels": [
+      "gazelle"
+    ]
+  },
+  {
+    "image": "sample_5.jpg",
+    "labels": [
+      "cock"
+    ]
+  },
+  {
+    "image": "sample_24.jpg",
+    "labels": [
+      "moving van"
+    ]
+  },
+  {
+    "image": "sample_30.jpg",
+    "labels": [
+      "sorrel"
+    ]
+  },
+  {
+    "image": "sample_18.jpg",
+    "labels": [
+      "eggnog"
+    ]
+  },
+  {
+    "image": "sample_19.jpg",
+    "labels": [
+      "sports car, sport car"
+    ]
+  },
+  {
+    "image": "sample_31.jpg",
+    "labels": [
+      "book jacket, dust cover, dust jacket, dust wrapper"
+    ]
+  },
+  {
+    "image": "sample_25.jpg",
+    "labels": [
+      "ostrich, Struthio camelus"
+    ]
+  },
+  {
+    "image": "sample_4.jpg",
+    "labels": [
+      "sorrel"
+    ]
+  },
+  {
+    "image": "sample_6.jpg",
+    "labels": [
+      "moving van"
+    ]
+  },
+  {
+    "image": "sample_33.jpg",
+    "labels": [
+      "tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui"
+    ]
+  },
+  {
+    "image": "sample_27.jpg",
+    "labels": [
+      "moving van"
+    ]
+  },
+  {
+    "image": "sample_26.jpg",
+    "labels": [
+      "yawl"
+    ]
+  },
+  {
+    "image": "sample_32.jpg",
     "labels": [
       "Mexican hairless"
+    ]
+  },
+  {
+    "image": "sample_7.jpg",
+    "labels": [
+      "ostrich, Struthio camelus"
+    ]
+  },
+  {
+    "image": "sample_3.jpg",
+    "labels": [
+      "beaver"
+    ]
+  },
+  {
+    "image": "sample_36.jpg",
+    "labels": [
+      "sorrel"
+    ]
+  },
+  {
+    "image": "sample_22.jpg",
+    "labels": [
+      "Eskimo dog, husky"
+    ]
+  },
+  {
+    "image": "sample_23.jpg",
+    "labels": [
+      "goldfinch, Carduelis carduelis"
+    ]
+  },
+  {
+    "image": "sample_37.jpg",
+    "labels": [
+      "ibex, Capra ibex"
+    ]
+  },
+  {
+    "image": "sample_2.jpg",
+    "labels": [
+      "moving van"
+    ]
+  },
+  {
+    "image": "sample_0.jpg",
+    "labels": [
+      "airliner"
+    ]
+  },
+  {
+    "image": "sample_21.jpg",
+    "labels": [
+      "ostrich, Struthio camelus"
+    ]
+  },
+  {
+    "image": "sample_35.jpg",
+    "labels": [
+      "container ship, containership, container vessel"
+    ]
+  },
+  {
+    "image": "sample_34.jpg",
+    "labels": [
+      "yawl"
+    ]
+  },
+  {
+    "image": "sample_20.jpg",
+    "labels": [
+      "hartebeest"
+    ]
+  },
+  {
+    "image": "sample_1.jpg",
+    "labels": [
+      "terrapin"
+    ]
+  },
+  {
+    "image": "sample_47.jpg",
+    "labels": [
+      "cassette player"
+    ]
+  },
+  {
+    "image": "sample_46.jpg",
+    "labels": [
+      "Walker hound, Walker foxhound"
+    ]
+  },
+  {
+    "image": "sample_44.jpg",
+    "labels": [
+      "dhole, Cuon alpinus"
+    ]
+  },
+  {
+    "image": "sample_45.jpg",
+    "labels": [
+      "whiptail, whiptail lizard"
+    ]
+  },
+  {
+    "image": "sample_41.jpg",
+    "labels": [
+      "tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui"
+    ]
+  },
+  {
+    "image": "sample_40.jpg",
+    "labels": [
+      "ostrich, Struthio camelus"
+    ]
+  },
+  {
+    "image": "sample_42.jpg",
+    "labels": [
+      "Blenheim spaniel"
+    ]
+  },
+  {
+    "image": "sample_43.jpg",
+    "labels": [
+      "screen, CRT screen"
     ]
   }
 ]

@@ -1,26 +1,14 @@
-from PIL import Image, ImageDraw, ImageFont
+from datasets import load_dataset
+
+# Load CIFAR-10 (tiny images, 60k total, 10 classes)
+dataset = load_dataset("cifar10")
+
+# Save 50 sample images into data/images/
 import os
+from PIL import Image
 
-def generate_sample_images(output_dir="data/images", num_images=5):
-    os.makedirs(output_dir, exist_ok=True)
+os.makedirs("data/images", exist_ok=True)
 
-    for i in range(num_images):
-        # Create a blank image (RGB)
-        img = Image.new("RGB", (200, 200), color=(i * 40 % 255, i * 80 % 255, i * 120 % 255))
-        
-        # Draw text
-        draw = ImageDraw.Draw(img)
-        text = f"Img {i+1}"
-        try:
-            font = ImageFont.load_default()
-        except:
-            font = None
-        draw.text((50, 90), text, fill=(255, 255, 255), font=font)
-
-        # Save
-        img_path = os.path.join(output_dir, f"sample_{i+1}.png")
-        img.save(img_path)
-        print(f"Generated {img_path}")
-
-if __name__ == "__main__":
-    generate_sample_images()
+for i in range(50):
+    img = dataset["train"][i]["img"]  # PIL image
+    img.save(f"data/images/sample_{i}.jpg")

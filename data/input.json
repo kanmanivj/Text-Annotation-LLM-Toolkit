@@ -1,5 +1,5 @@
 [
-  {"text": "Amazon is hiring AI experts.", "labels": ["general", "business"]},
-  {"text": "Python is fun to learn!", "labels": ["general"]},
-  {"text": "Cloud computing is essential for modern apps.", "labels": ["general", "technical"]}
+  {"text": "Amazon is hiring AI experts."},
+  {"text": "Python is fun to learn!"},
+  {"text": "Cloud computing is essential for modern apps."}
 ]

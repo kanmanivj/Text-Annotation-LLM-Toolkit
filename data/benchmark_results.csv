@@ -1,0 +1,4 @@
+num_images,avg_time_sec,time_per_image_sec
+10,2.88,0.29
+20,1.92,0.10
+50,5.09,0.10
